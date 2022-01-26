@@ -28,24 +28,7 @@
     </nav>
     <header class="text-center text-white d-flex masthead" style="background-image:url('assets/img/header.jpg');">
         <div class="container my-auto">
-		 <div class="tampil" id="tampil">
-		<script>
-		var a = document.getElementById('tampil');
-		function putarmusic(){
-			a.style.display = "none";
-document.getElementById("audio").play(); 
-		}
-		</script>
-
-
-		<div class="muncul">
-			<div>
-				<h1>JEJAMA STUDIO</h1>
-				<p>- ANDROID MOBILE APP DEVELOPMENT -</p>
-				<button onclick=" putarmusic()">LANJUTKAN</button>
-			</div>
-		</div>
-	</div>
+		
 
             <div class="row">
                 <div class="col-lg-10 mx-auto">
@@ -67,7 +50,24 @@ document.getElementById("audio").play();
    <audio id="audio" autoplay hidden src="https://jejama-studio.web.app/dulu.mp3" loop controls></audio>
 
 </body>
+ <div class="tampil" id="tampil">
+		<script>
+		var a = document.getElementById('tampil');
+		function putarmusic(){
+			a.style.display = "none";
+document.getElementById("audio").play(); 
+		}
+		</script>
 
+
+		<div class="tampil-body">
+			<div>
+				<h1>JEJAMA STUDIO</h1>
+				<p>- ANDROID MOBILE APP DEVELOPMENT -</p>
+				<button onclick=" putarmusic()">LANJUTKAN</button>
+			</div>
+		</div>
+	</div>
   
 </body>
 
