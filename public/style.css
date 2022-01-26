@@ -10,12 +10,26 @@
 }
 
 .muncul div {
+	
+	font-size: 1.1em;
 	border-radius: 20px;
 	padding: 20px;
 	margin: auto;
-	width: 50%;
+	width: 100%;
 	background-color: white;
 }
+
+.muncul  a {
+	color: black;
+}
+.muncul  a:hover {
+	color: white;
+}
+.muncul  .active {
+	color: white;
+}
+
+
 .muncul button {
 	cursor: pointer;
 	font-size: 1.1em;
