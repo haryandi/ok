@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-*
-
 .tampil {
 	position: fixed;
 	top: 0;
@@ -9,7 +6,7 @@
 	bottom: 0;
 	background: rgba(0, 0, 0, 0.7);
 }
-.muncul {
+.tampil-body {
 	display: flex;
 	height: 100vh;
 	width: 100%;
@@ -17,26 +14,14 @@
 	justify-content: center;
 }
 
-.muncul div {
-	
-	font-size: 1.1em;
+.tampil-body div {
 	border-radius: 20px;
 	padding: 20px;
 	margin: auto;
 	width: 50%;
 	background-color: white;
 }
-
-.muncul  h1 {
-	color: black;
-}
-
-.muncul  .active {
-	color: white;
-}
-
-
-.muncul button {
+.tampil-body button {
 	cursor: pointer;
 	font-size: 1.1em;
 	text-align: center;
@@ -48,3 +33,12 @@
 	color: white;
 	padding: 10px;
 }
+
+.tampil-body   h1 {
+	color: black;
+}
+
+.tampil-body   .active {
+	color: white;
+}
+
