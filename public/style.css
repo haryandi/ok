@@ -27,12 +27,10 @@
 	background-color: white;
 }
 
-.muncul  a {
+.muncul  h1 {
 	color: black;
 }
-.muncul  a:hover {
-	color: white;
-}
+
 .muncul  .active {
 	color: white;
 }
