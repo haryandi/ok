@@ -26,7 +26,7 @@
                         </BR>
                         
                        <div class="text-center" id="link">
-                                                     
+  <H><strong>DAFTAR PRODUK</strong><H/></BR>                
 <p>waiting...</p>
                          
                     </div></div>
@@ -42,8 +42,7 @@
      $.getJSON("https://script.googleusercontent.com/macros/echo?user_content_key=lyFGvWrU4imduRBvC4jA1Kg9veXiKssbl282oRzzR9_ciTO9XO6Mw4nb0lmUvMYMcEVHM8OghLQHJw9Q75lfIfqvnt0W1dEDOJmA1Yb3SEsKFZqtv3DaNYcMrmhZHmUMWojr9NvTBuBLhyHCd5hHaycrEzNhlqxuej4n49pSEiCs5SPreC2QyQ5TIMk2stw11qKo74XirIDbfUOhEQyMWTdFZXw4mgS4jD3R6IC0EsqWCdo-iHTpOno2yeDGxMjWqoRHbWky2UWt06GC-ZnJYl4QEr2paiAhgIgF_EBhIfC0tW7FROm7JT7pTl6U6gb8u--hnZjV4WE&lib=MzrdOdBHdVpRVNWKhVKR17CJes7BewgY5", function(result){
        console.log(result["data"]["link"]);
        var m= result["data"]["link"];
-         document.getElementById("link").innerHTML =" <H><strong>DAFTAR PRODUK</strong><H/>
-                    </BR>";
+         document.getElementById("link").innerHTML =="<H><strong>DAFTAR PRODUK</strong><H/></BR>";
        $.each(m, function(i){
          document.getElementById("link").innerHTML +='<button type="button" href="'+m[i].Link+'"  class="btn btn-secondary btn-lg btn-block">'+m[i].No+'  '+m[i].Judul+'</button>';
        });
