@@ -44,7 +44,7 @@
        var m= result["data"]["link"];
          document.getElementById("link").innerHTML =="<H><strong>DAFTAR PRODUK</strong><H/></BR>";
        $.each(m, function(i){
-         document.getElementById("link").innerHTML +='<button type="a" href="'+m[i].Link+'"  class="btn btn-secondary btn-lg btn-block">'+m[i].No+'  '+m[i].Judul+'</a>';
+         document.getElementById("link").innerHTML +='<a type="button" href="'+m[i].Link+'"  class="btn btn-secondary btn-lg btn-block">'+m[i].No+'  '+m[i].Judul+'</a>';
        });
      });
    </script>
