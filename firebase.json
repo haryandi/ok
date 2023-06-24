@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site":"masturi"
+    "site":"masturi",
     "public": "public"
   }
 }
