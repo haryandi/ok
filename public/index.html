@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+   <script
+   src="http://code.jquery.com/jquery-3.3.1.js"
+   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+   crossorigin="anonymous"></script>
+
+   <script type="text/javascript">
+     $.getJSON("https://script.googleusercontent.com/macros/echo?user_content_key=lyFGvWrU4imduRBvC4jA1Kg9veXiKssbl282oRzzR9_ciTO9XO6Mw4nb0lmUvMYMcEVHM8OghLQHJw9Q75lfIfqvnt0W1dEDOJmA1Yb3SEsKFZqtv3DaNYcMrmhZHmUMWojr9NvTBuBLhyHCd5hHaycrEzNhlqxuej4n49pSEiCs5SPreC2QyQ5TIMk2stw11qKo74XirIDbfUOhEQyMWTdFZXw4mgS4jD3R6IC0EsqWCdo-iHTpOno2yeDGxMjWqoRHbWky2UWt06GC-ZnJYl4QEr2paiAhgIgF_EBhIfC0tW7FROm7JT7pTl6U6gb8u--hnZjV4WE&lib=MzrdOdBHdVpRVNWKhVKR17CJes7BewgY5", function(result){
+       console.log(result["data"]["link"]);
+       var m= result["data"]["link"];
+       $.each(m, function(i){
+         document.getElementById("link").innerHTML +='<button type="button" href="'+m[i].Link+'"  class="btn btn-secondary btn-lg btn-block">'+m[i].No+'  '+m[i].Judul+'</button>';
+       });
+     });
+   </script>
+</head>
+
+<body>
+    <div class="team-boxed" >
+        <div class="container">
+                <div class="col-md-6-center col-lg-4-center item">
+                    <div class="box"><img class="rounded-circle" src="https://scontent.fcgk30-1.fna.fbcdn.net/v/t39.30808-6/353047675_983837439320714_8980877659386485764_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=TswgNL47U9kAX_VcZIe&_nc_ht=scontent.fcgk30-1.fna&oh=00_AfDsUtYDejRN-PHhRnUX1DJoUvbgR3Xa0OmHFJv_aU276g&oe=649BE0DE">
+                        <h3 class="name">Masturi</h3>
+                        <p class="title">Conten Creator</p>
+                        <p class="description"></p>
+                        <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                        </BR>
+                        
+                       <div class="text-center" id="link">
+                                                      <H><strong>DAFTAR PRODUK</strong><H/>
+                    </BR>
+
+                         
+                    </div></div>
+
+                </div>
+       
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
